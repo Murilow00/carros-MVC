@@ -81,7 +81,8 @@ const deletarCarro = (req, res) => {
 
      return res.status(200).json({
         sucess: true,
-        message: `O carro ${id} foi removido com sucesso`
+        message: `O carro ${id} foi removido com sucesso`,
+        data: carroParaRemover
     });
 };
 
