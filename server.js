@@ -1,6 +1,6 @@
 import express from "express";
 import dotenv from "dotenv";
-import carrosRoutes from "../api-Carros/src/routes/carrosRoutes.js";
+import carrosRoutes from "../carros-MVC/src/routes/carrosRoutes.js";
 
 const app = express()
 app.use(express.json());

@@ -1,13 +1,13 @@
 import express from "express"
-import { getAllCarros, getCarrosById, criarNovoCarro,apagarCarro, atulizarCarro } from "../controllers/carrosController.js"
+import { getAllCarros, getCarroById, criarCarro, deletarCarro, atualizarCarro } from "../controllers/carrosController.js"
 
 const router = express.Router()
 
 router.get("/", getAllCarros);
-router.get("/:id", getCarrosById);
-router.post("/", criarNovoCarro);
-router.put("/:id", atulizarCarro);
-router.delete("/:id", apagarCarro);
+router.get("/:id", getCarroById);
+router.post("/", criarCarro);
+router.put("/:id", atualizarCarro);
+router.delete("/:id", deletarCarro);
 
 
 
